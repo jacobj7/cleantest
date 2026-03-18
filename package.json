@@ -35,6 +35,6 @@
     "eslint": "^9.0.0",
     "eslint-config-next": "15.0.0",
     "@eslint/js": "^9.0.0",
-    "@eslint/eslintcompat": "^1.2.0"
+    "@eslint/eslintrc": "^3.0.0"
   }
 }
