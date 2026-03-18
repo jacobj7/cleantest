@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { SessionProvider } from "next-auth/react";
+import { Providers } from "@/components/Providers";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
@@ -16,10 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-gray-50 text-gray-900 antialiased">
-        <SessionProvider>
+        <Providers>
           <Navbar />
           <main className="container mx-auto px-4 py-8">{children}</main>
-        </SessionProvider>
+        </Providers>
       </body>
     </html>
   );
