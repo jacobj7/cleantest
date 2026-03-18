@@ -1,6 +1,6 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import GitHubProvider from "next-auth/providers/github";
-import { PostgresAdapter } from "@auth/pg-adapter";
+import PostgresAdapter from "@auth/pg-adapter";
 import { Pool } from "pg";
 
 const pool = new Pool({
